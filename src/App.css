@@ -1,33 +1,117 @@
-.App {
-  text-align: center;
+.main-container{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+
+}
+.img-landing-page{
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-capitalize{
+    text-transform: capitalize;
+
+}
+.h1{
+    font-size: 4rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.list-group-item{
+    
+    background: transparent;
+    border-top:0 none;
+    border-left:0 none;
+    border-right: 0 none;
+   
+}
+.list-group{
+    border-bottom-left-radius: 0% none;
+    border-bottom-right-radius: 0% none;
+}
+.social-links{
+    display: flex;
+
+}
+.social-links li{
+    list-style: none;
+
+}
+.social-links li a{
+    width: 6rem;
+    height: 6rem;
+    background: #fff;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin: 0 1rem;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 3;
+}
+.li-social-links  a .fab{
+    position: relative;
+    color:#262626;
+    transition: .3s;
+    z-index: 3;
+    text-align: center;
+    top:15%;
+}
+.li-social-links  a:hover .fab{
+    cursor: pointer;
+    transform: rotateX(360deg);
+}
+.social-links li a::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+.social-links li a:hover::before{
+    top:0;
+}
+.social-links li:nth-child(1) a::before{
+background: #3b5999;
+}
+.social-links li:nth-child(2) a::before{
+background: #0077b5;
+}
+.social-links li:nth-child(3) a::before{
+background: #3f729b;
+}
+.tab-title:hover{
+    text-decoration: none;
+    opacity: .8;
+}
+.tab-title{
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    margin-left: 1.2rem;
+}
+.mx-2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.my-3{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.text-slanted{
+    font-size: 2rem;
+    color: #EDF403;
+}
+.project-img{
+    border: 0.5rem #262626 solid;
+    border-radius: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
